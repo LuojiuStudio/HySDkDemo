@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/default_et_frame"
+    android:orientation="vertical" >
+    
+	<RelativeLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/default_button_white"
+        android:paddingBottom="@dimen/register_title_padding"
+        android:paddingTop="@dimen/register_title_padding" >
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/register_layout_margin_base"
+            android:layout_marginStart="@dimen/register_layout_margin_base"
+            android:gravity="center_horizontal"
+            android:text="绑定手机号" />
+
+        <TextView
+            android:id="@+id/tv_dismiss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/titleTv"
+            android:layout_alignTop="@id/titleTv"
+            android:layout_marginLeft="@dimen/register_layout_margin_base"
+            android:layout_marginStart="@dimen/register_layout_margin_base"
+             android:text="关闭"
+             />
+    </RelativeLayout>
+    
+	<LinearLayout
+        android:id="@+id/etLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/register_layout_margin_base"
+        android:layout_marginRight="@dimen/register_layout_margin_base"
+        android:layout_marginTop="@dimen/register_layout_margin_base"
+        android:background="@drawable/default_frame"
+        android:orientation="vertical" >
+        
+	   <TextView 
+	       android:layout_width="match_parent"
+	       android:layout_height="50dp"
+	       android:text="建议绑定手机号，更安全，更多功能。"
+	       android:textColor="@color/default_et_text"
+	       android:gravity="center" />
+
+       <LinearLayout
+            android:id="@+id/accountLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/accountIcon"
+                style="@style/zIconBase"
+                android:layout_width="@dimen/default_icon_size"
+                android:layout_height="@dimen/default_icon_size"
+                android:background="@drawable/z_phone" />
+
+            <EditText
+                android:id="@+id/et_bind_phone"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/defaut_et_hight"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="输入手机号"
+                android:singleLine="true"
+                android:textSize="@dimen/default_et_text_size" />
+
+
+        </LinearLayout>
+
+        <include layout="@drawable/default_line" />
+
+        <LinearLayout
+            android:id="@+id/passwdLayoutFirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/zIconBase"
+                android:layout_width="@dimen/default_icon_size"
+                android:layout_height="@dimen/default_icon_size"
+                android:background="@drawable/z_passwd_register" />
+
+            <EditText
+                android:id="@+id/et_auth_code"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/defaut_et_hight"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="输入验证码"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textSize="@dimen/default_et_text_size" />
+
+            <TextView
+                android:id="@+id/tv_get_auth_code"
+                style="@style/zIconBase"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/default_icon_size"
+                android:text="获取验证码"
+                android:textSize="@dimen/default_et_text_size"
+                android:textColor="@color/default_button_red"
+                android:gravity="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+    
+	<TextView
+        android:id="@+id/tv_bind_phone"
+        style="@style/zBtBase"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/defaut_bt_hight"
+        android:layout_marginBottom="@dimen/register_layout_margin_base"
+        android:layout_marginLeft="@dimen/register_layout_margin_base"
+        android:layout_marginRight="@dimen/register_layout_margin_base"
+        android:background="@drawable/login_btn_frame"
+        android:text="绑定"
+        android:textColor="@color/default_button_white" />
+</LinearLayout>

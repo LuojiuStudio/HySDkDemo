@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="default_et_frame">#ffe1e1e1</color>
+    <color name="default_et_background">#fff7f7f7</color>
+    <color name="default_et_text">#ff666666</color>
+    
+    <color name="default_button_red">#fff33221</color>
+    <color name="default_button_white">#ffffffff</color>
+    
+    <color name="item_normal">#00000000</color>
+    <color name="item_press">#ffd5c7c7</color>
+    
+    <color name="list_background">#cccccc</color>
+</resources>

@@ -1,0 +1,90 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="31" android:versionName="v3.1" package="com.example.paydemo">
+	
+    <uses-sdk android:minSdkVersion="17" android:targetSdkVersion="26"/>
+
+    <!-- permission start -->
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-feature android:name="android.hardware.nfc.hce"/>
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.webkit.permission.PLUGIN"/>
+    <uses-permission android:name="org.simalliance.openmobileapi.SMARTCARD"/>
+    <uses-permission android:name="cn.swiftpass.wxpay.permission.MMOAUTH_CALLBACK"/>
+    <uses-permission android:name="cn.swiftpass.wxpay.permission.MM_MESSAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/> 
+    <!-- 录像需要的权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.RECORD_VIDEO"/>
+
+    <!-- 必须继承或直接使用HYApplication -->
+    <application android:allowBackup="true" android:icon="@drawable/hy_launcher" android:label="hydemo" android:name="com.android.sdk.port.HYApplication" android:theme="@style/AppTheme">
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:label="hyDemo" android:name="com.example.paydemo.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+		<!-- application  start -->
+		<!-- 此处【不需要】由CP方改动 -->
+        <meta-data android:name="chal" android:value="cp00"/>
+
+       <activity android:configChanges="screenSize|orientation|keyboard|navigation|layoutDirection" android:launchMode="singleTask" android:name="com.iapppay.ui.activity.SelectAmountActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        </activity>
+
+        <activity android:configChanges="orientation|keyboardHidden" android:name="com.android.sdk.ext.SplashActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+        </activity>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.android.sdk.shcore.PayActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Light.NoTitleBar">
+        </activity>
+        <!-- application  end -->
+          <activity android:name="com.iapppay.demo.activity.MainDemoActivity"/>
+        <activity android:name="com.iapppay.demo.activity.PaySettingActivity"/>
+        <activity android:name="com.iapppay.demo.activity.GoodsListActivity"/>
+
+        <!-- 微支付SDK界面 -->
+        <!-- 显示网页界面 -->
+        <activity android:configChanges="screenSize|orientation|keyboard|navigation|layoutDirection" android:name="com.iapppay.sdk.main.WebActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="screenSize|orientation|keyboard|navigation|layoutDirection" android:name="com.iapppay.ui.activity.PersonCenterActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <!-- 收银台-普通 -->
+        <activity android:configChanges="screenSize|orientation|keyboard|navigation|layoutDirection" android:name="com.iapppay.ui.activity.PayHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="screenSize|orientation|keyboard|navigation|layoutDirection" android:launchMode="singleTask" android:name="com.iapppay.ui.activity.ChargeActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <!-- 游戏卡和话费卡界面 -->
+        <activity android:configChanges="screenSize|orientation|keyboard|navigation|layoutDirection" android:launchMode="singleTask" android:name="com.iapppay.ui.card.GamepayActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <!-- alipay sdk begin (新的支付宝) -->
+        <activity android:configChanges="orientation|keyboardHidden|navigation" android:exported="false" android:name="com.alipay.sdk.app.H5PayActivity" android:screenOrientation="behind" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="orientation|keyboardHidden|navigation" android:exported="false" android:name="com.alipay.sdk.auth.AuthActivity" android:screenOrientation="behind"/>
+    </application>
+
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"/>
+
+</manifest>

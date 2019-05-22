@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- corner -->
+    <dimen name="default_corner">6dp</dimen>
+    <!-- layoyut -->
+    <dimen name="default_layout_margin">20dp</dimen>
+    <dimen name="default_layout_margin_2">40dp</dimen>
+    
+    <!-- et -->
+    <dimen name="default_et_margin">5.5dp</dimen>
+    <dimen name="default_icon_size">18dp</dimen>
+    <dimen name="default_icon_lehgth">22dp</dimen>
+    <dimen name="defaut_et_hight">32dp</dimen>
+    
+    <dimen name="default_et_text_size">12sp</dimen>
+    
+    <!-- bt -->
+    <dimen name="defaut_bt_hight">32dp</dimen>
+    <dimen name="default_bt_margin">10.5dp</dimen>
+    <dimen name="default_bt_text_major_size">16sp</dimen>
+    <dimen name="default_bt_text_size">12sp</dimen>
+    <dimen name="small_bt_text_size">10sp</dimen>
+    <dimen name="btn_margin_top_bottom">5dp</dimen>
+    <dimen name="btn_margin_left_right">7.5dp</dimen>
+    
+    <dimen name="alige">5dp</dimen>
+    <!-- icon -->
+    <dimen name="icon_margin">2dp</dimen>
+    <dimen name="icon_watting_size">40dp</dimen>
+    
+    <!-- register -->
+    <dimen name="register_title_padding">10dp</dimen>
+    <dimen name="register_layout_margin_base">14dp</dimen>
+    
+    
+    <dimen name="default_title_text">18dp</dimen>
+    
+    
+</resources>

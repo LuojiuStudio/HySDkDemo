@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>test</title>
+    <style>
+        button{
+
+            width: 100%;
+            height: 40px;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            const init = document.getElementById("init");
+            const login = document.getElementById("login");
+            const create_role = document.getElementById("create_role");
+            const enterGame = document.getElementById("enterGame");
+            const pay = document.getElementById("pay");
+            const logout = document.getElementById("logout");
+            const exitGame = document.getElementById("exitGame");
+            const roleInfo  ="{\"RoleName\":\"player01\",\"RoleID\":\"445249018300\",\"RoleName\":\"player01\",\"roleLevel\":\"1\",\"roleCreateDateTime\":\"时间戳\",\"roleLevelChangeTime\":\"时间戳\",\"ServerName\":\"ceshifu\",\"ServerID\":\"1\"}";
+            const payInfo = "{\"CpOrderId\":\"CPTEST000029\",\"Waresname\":\"测试\",\"Price\":\"6.00\",\"Ext\":\"key1=value1&key2=value2\"}";
+            init.onclick = function () {
+
+                SDKPay.init();
+
+            };
+            login.onclick = function () {
+
+                SDKPay.login();
+
+            };
+            create_role.onclick = function () {
+
+                //roleid
+                SDKPay.create_role("445249018300");
+
+            };
+            enterGame.onclick = function () {
+
+                SDKPay.enterGame(roleInfo);
+
+            };
+            pay.onclick = function () {
+
+                SDKPay.pay(payInfo,roleInfo);
+
+            };
+            logout.onclick = function () {
+
+                SDKPay.logout();
+
+            };
+        };
+
+        function onloginComplete(result) {
+            if(result.code==0){
+                alert("登陆成功")
+            }else {
+                alert("登陆失败")
+            }
+
+        }
+
+        function onlogoutComplete(statusCode) {
+            if(statusCode==5){
+                alert("切换用户成功")
+            }else if(statusCode==-5){
+                alert("切换用户成功")
+            }else if(statusCode==0){
+                alert("注销成功")
+            }else {
+
+                alert("注销失败")
+            }
+
+        }
+
+        function onInitComplete(statusCode) {
+            if(statusCode==0){
+
+                alert("初始化成功")
+            }else {
+
+                alert("初始化失败")
+            }
+
+        }
+
+        function onPayResult(statusCode) {
+            if(statusCode==0){
+                alert("支付成功")
+            }else{
+                alert("支付失败")
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <p align="center">
+        <button id="init">初始化</button>
+    </p>
+    <p align="center">
+        <button id="login">登录</button>
+    </p>
+    <p align="center">
+        <button id="create_role">创建角色</button>
+    </p>
+    <p align="center">
+        <button id="enterGame">进入游戏提交角色信息</button>
+    </p>
+    <p align="center">
+        <button id="pay">支付</button>
+    </p>
+    <p align="center">
+        <button id="logout">注销</button>
+    </p>
+
+</body>
+</html>

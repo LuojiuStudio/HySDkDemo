@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/default_layout_margin"
+    android:layout_marginRight="@dimen/default_layout_margin"
+    android:background="@color/item_normal"
+    android:orientation="vertical"
+    android:padding="@dimen/default_layout_margin" >
+
+    <ImageView
+        android:id="@+id/lodingImg"
+        android:layout_width="@dimen/icon_watting_size"
+        android:layout_height="@dimen/icon_watting_size"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/btn_margin_top_bottom"
+        android:src="@drawable/z_aa" />
+    
+    <TextView
+        android:id="@+id/lodingRemainTime"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/item_press"
+        android:textSize="@dimen/default_bt_text_major_size" />
+
+    <TextView
+        android:id="@+id/lodingText"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/text_titile_loding"
+        android:textColor="@color/item_press"
+        android:textSize="@dimen/default_bt_text_size" />
+
+</LinearLayout>

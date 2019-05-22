@@ -1,0 +1,20 @@
+{
+ "meta-data": [
+  {
+   "platformCode": 0,
+   "name": "AB_APP_ID",
+   "value": "3010728375",
+   "description": "爱贝appid（此配置已废弃）"
+  }
+ ],
+ "platformCode": 1,
+ "realizeClassName": "com.android.sdk.ext.ThirdPayRealize_AB",
+ "version": "1.1.5",
+ "placeHolder": [
+
+ ],
+ "versionCode": 115,
+ "applicationRealize": "",
+ "mergeAppId": "666666",
+ "screenOrientation": "landscape"
+}

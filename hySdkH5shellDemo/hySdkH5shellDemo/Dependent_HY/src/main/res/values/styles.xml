@@ -1,0 +1,43 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="zBase" >
+        <item name="android:layout_marginLeft">@dimen/default_layout_margin</item>
+        <item name="android:layout_marginRight">@dimen/default_layout_margin</item>
+        <item name="android:layout_marginTop">@dimen/default_et_margin</item>
+        <item name="android:layout_marginBottom">@dimen/default_et_margin</item>
+    </style>
+    
+    <style name="zBtBase">
+        <item name="android:layout_marginLeft">@dimen/default_layout_margin</item>
+        <item name="android:layout_marginRight">@dimen/default_layout_margin</item>
+        <item name="android:layout_marginTop">@dimen/default_bt_margin</item>
+        <item name="android:layout_marginBottom">@dimen/default_bt_margin</item>
+        <item name="android:textColor">@color/default_button_red</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/default_bt_text_size</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/default_btn_frame</item>
+    </style>
+    
+    <style name="zIconBase">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">@dimen/icon_margin</item>
+    </style>
+
+</resources>

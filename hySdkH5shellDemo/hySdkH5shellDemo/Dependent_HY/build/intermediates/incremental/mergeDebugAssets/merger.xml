@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="C:\Users\WIN10\Desktop\HySDKData\hySdk1.2.6.5\hySdkH5shellDemo\hySdkH5shellDemo\Dependent_HY\src\main\assets"/><source path="C:\Users\WIN10\Desktop\HySDKData\hySdk1.2.6.5\hySdkH5shellDemo\hySdkH5shellDemo\Dependent_HY\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="C:\Users\WIN10\Desktop\HySDKData\hySdk1.2.6.5\hySdkH5shellDemo\hySdkH5shellDemo\Dependent_HY\src\debug\assets"/></dataSet></merger>

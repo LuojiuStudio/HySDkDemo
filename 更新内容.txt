@@ -1,0 +1,25 @@
+hySdk1.2.6.4——2019年5月5日更新内容
+
+一、增加RoleBean类方法
+以下为新增方法,详情请参照Demo或文档\鸿游SDK客户端接入文档.md
+RoleBean:{
+	setRoleLevel("");          | 角色等级                          |int
+	setRoleLevelChangeTime("");| 角色创建时间 定值 时间戳 可选参数 |String
+	setRoleCreateDateTime(""); | 角色等级改变时间 定值 时间戳      |Strin
+}
+
+二、增加LoginListener接口回调中onLogoutCompleted的传值
+在登录回调接口onLogoutCompleted方法实现中，加入以下判断，实现切换账户功能，
+
+if (PayStatusCode.CHANGE_USER_SUCCESS == statusCode){
+	//切换账户
+	//渠道SDk触发的切换账号，游戏应该这里做清除游戏数据、回到登录界面、调起登录框等操作
+}else if(PayStatusCode.CHANGE_USER_FAILED == statusCode){
+	//切换账户失败
+}
+
+=================================================================================================
+以上为更新内容
+如果已经接入我方SDK可以直接删除原libs中的npayext_1.1.5.jar
+加入npaysdk_1.2.6.5.jar、onetgame_sdk_s_plugin_base.jar
+实现以上2个更新重新出包即可

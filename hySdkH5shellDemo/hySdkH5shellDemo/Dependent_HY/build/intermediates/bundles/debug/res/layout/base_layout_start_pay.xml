@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/default_et_frame"
+    android:orientation="vertical" >
+    
+	<RelativeLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/default_button_white"
+        android:paddingBottom="@dimen/register_title_padding"
+        android:paddingTop="@dimen/register_title_padding" >
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/register_layout_margin_base"
+            android:layout_marginStart="@dimen/register_layout_margin_base"
+            android:gravity="center_horizontal"
+            android:text="请选择支付方式" />
+
+        <TextView
+            android:id="@+id/tv_dismiss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/titleTv"
+            android:layout_alignTop="@id/titleTv"
+            android:layout_marginLeft="@dimen/register_layout_margin_base"
+            android:layout_marginStart="@dimen/register_layout_margin_base"
+            android:background="@drawable/z_back" />
+    </RelativeLayout>
+    
+	<LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp">
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/default_et_text_size"
+                android:textColor="@android:color/black"
+                android:text="账号：  "
+                android:gravity="center_vertical"/>
+            <TextView 
+                android:id="@+id/tv_account"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/default_et_text_size"
+                android:textColor="@color/default_et_text"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+>
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/default_et_text_size"
+                android:textColor="@android:color/black"
+                android:text="余额：  "
+                android:gravity="center_vertical"/>
+            <TextView 
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/default_et_text_size"
+                android:textColor="@color/default_button_red"
+                android:text="0"
+                android:gravity="center_vertical"/>
+            <TextView 
+                android:id="@+id/tv_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/default_et_text_size"
+                android:textColor="@color/default_et_text"
+                android:text="鸿游币"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/default_et_text_size"
+                android:textColor="@android:color/black"
+                android:text="商品名称：  "
+                android:gravity="center_vertical"/>
+            <TextView 
+                android:id="@+id/tv_wearname"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/default_et_text_size"
+                android:textColor="@color/default_et_text"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+    </LinearLayout>
+	
+    <LinearLayout
+        android:id="@+id/etLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/register_layout_margin_base"
+        android:layout_marginRight="@dimen/register_layout_margin_base"
+        android:layout_marginTop="@dimen/register_layout_margin_base"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/default_frame"
+        android:orientation="vertical" >
+        
+
+       <!-- <LinearLayout
+            android:id="@+id/accountLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/et_bind_phone"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/defaut_et_hight"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="平台币支付"
+                android:textColor="@color/default_et_text"
+                android:singleLine="true"
+                android:textSize="@dimen/default_et_text_size"
+                android:gravity="center_vertical" />
+
+
+        </LinearLayout>
+
+        <include layout="@drawable/default_line" />
+
+        <LinearLayout
+            android:id="@+id/passwdLayoutFirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/et_auth_code"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/defaut_et_hight"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="其他支付方式（支付宝、微信等）"
+                android:textColor="@color/default_et_text"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textSize="@dimen/default_et_text_size" />
+
+        </LinearLayout> -->
+        
+        
+
+		<RadioGroup 		    
+		    android:id="@+id/rg_select_pay"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical">
+		    
+		    <RadioButton
+	                android:id="@+id/rb_platfoem"
+	                android:layout_width="match_parent"
+	                android:layout_height="@dimen/defaut_et_hight"
+	                android:background="@null"
+	                android:button="@null"
+					android:drawableRight="@drawable/hy_hot"
+	                android:text="平台币支付    0鸿游币"
+	                android:textColor="@color/default_et_text"
+	                android:singleLine="true"
+	                android:textSize="@dimen/default_et_text_size"
+	                android:gravity="center_vertical"
+	                android:checked="true" />
+		    
+		    <include layout="@drawable/default_line" />
+		    
+		    <RadioButton
+	                android:id="@+id/rb_third_pay"
+	                android:layout_width="match_parent"
+	                android:layout_height="@dimen/defaut_et_hight"
+	                android:background="@null"
+	                android:button="@null"
+					android:drawableRight="@drawable/hy_hot"
+	                android:text="其他支付方式（支付宝、微信等）"
+	                android:textColor="@color/default_et_text"
+	                android:gravity="center_vertical"
+	                android:singleLine="true"
+	                android:textSize="@dimen/default_et_text_size" />
+		</RadioGroup>
+    </LinearLayout>
+    
+    
+	<TextView
+        android:id="@+id/tv_pay"
+        style="@style/zBtBase"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/defaut_bt_hight"
+        android:layout_marginBottom="@dimen/register_layout_margin_base"
+        android:layout_marginLeft="@dimen/register_layout_margin_base"
+        android:layout_marginRight="@dimen/register_layout_margin_base"
+        android:background="@drawable/login_btn_frame"
+        android:text="支付"
+        android:textColor="@color/default_button_white" />
+</LinearLayout>

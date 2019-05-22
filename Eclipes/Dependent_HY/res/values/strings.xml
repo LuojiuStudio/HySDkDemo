@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="et_account_default">请输入手机号/邮箱/游戏账号</string>
+    <string name="et_passwd_default">请输入密码</string>
+    
+    <string name="btn_login_func">立即登录</string>
+    <string name="btn_quick_login_func">快速登录</string>
+    <string name="btn_register">注册账户</string>
+    <string name="btn_change_passwd">修改密码</string>
+    <string name="btn_forget_passwd">忘记密码? >></string>
+    
+    <string name="btn_register_func">立即注册</string>
+    
+    <string name="btn_paid">我已经支付</string>
+    
+    <string name="et_register_acount_default">输入手机号/邮箱</string>
+    <string name="et_register_passwd_default">请设置密码</string>
+    <string name="et_register_passwd_again_default">请确认密码</string>
+    
+    
+    <string name="text_back">&#060;</string>
+    
+    <string name="text_delete_record">是否在本地删除该条记录</string>
+    <string name="text_delete_btn">删除</string>
+    <string name="text_cancel_btn">取消</string>
+
+    <string name="text_titile_loding">登陆中,请稍后#8230</string>
+    <string name="text_titile_registing">注册中,请稍后#8230</string>
+    <string name="text_titile_changing">修改中,请稍后#8230</string>
+    
+</resources>

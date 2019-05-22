@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@drawable/dropdown_bg_selector"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/itemTv"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/default_et_text"
+        android:textSize="@dimen/default_et_text_size"
+        android:layout_marginTop="@dimen/btn_margin_top_bottom"
+        android:layout_marginBottom="@dimen/btn_margin_top_bottom"
+		android:layout_marginStart="@dimen/default_bt_margin"
+        android:layout_marginLeft="@dimen/default_bt_margin"/>
+    
+    <TextView 
+        android:id="@+id/itemBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/default_et_text"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:text="X"
+        android:layout_margin="@dimen/icon_margin"
+        />
+    
+</LinearLayout>

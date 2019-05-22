@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 2 elements from project &apos;Dependent_HY&apos;&#x0D;&#x0A;- Original project: &apos;Dependent_HY&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     npaysdk_1.2.6.5.jar&#x0D;&#x0A;     onetgame_sdk_s_plugin_base.jar" description="Delete elements" element1="libs/onetgame_sdk_s_plugin_base.jar" element2="libs/npaysdk_1.2.6.5.jar" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="2" stamp="1558059266917" subPackages="false" version="1.0"/>
+</session>
